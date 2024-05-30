@@ -1,7 +1,7 @@
 
 # Week 3 Class Activity: Test Driven Development
 
-Project scaffold for week-3-tdd-starter
+This repository contains starter files for the week 3 TDD Class Activity
 
 This is a customized Typescript 5 project starter which includes the following features:
 * Webpack bunding
