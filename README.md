@@ -1,5 +1,5 @@
 
-# week-3-tdd-starter
+# Week 3 Class Activity: Test Driven Development
 
 Project scaffold for week-3-tdd-starter
 
