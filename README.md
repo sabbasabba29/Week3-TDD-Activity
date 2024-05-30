@@ -1,7 +1,7 @@
 
-# week-4-tdd-starter
+# week-3-tdd-starter
 
-Project scaffold for week-4-tdd-starter
+Project scaffold for week-3-tdd-starter
 
 This is a customized Typescript 5 project starter which includes the following features:
 * Webpack bunding
