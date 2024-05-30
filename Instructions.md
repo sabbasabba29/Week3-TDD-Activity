@@ -1,4 +1,4 @@
-# Week 4 TDD activity (Calculator)
+# Week 3 TDD Class Activity: Implementing a basic Calculator
 
 In this activity, you will implement the calculator you designed in previous classes using Test Driven Development.
 This activity is only designed to introduce you to TDD and demonstrate some key ideas behind it; we will cover
@@ -601,7 +601,7 @@ And the tests all pass again!!
 Now that we have a basic idea of how TDD works, continue working on developing the calulator.
 - Use TDD to implement basic arithmetic operations with 2 operands, such as `2 + 3 === 5`.
 - Use TDD to support arithmetic operations with more than 1 operator, such as `2 + 3 -1 === 4`.
-- Use TDD to support operator precedence, such as `2 + 3 * 4 === 14`.
+- (optional) Use TDD to support operator precedence, such as `2 + 3 * 4 === 14`.
 
 *Note*: Implementing operator precedence can be tricky. 
 Do not worry if you can't get working in-time for the submission. 
