@@ -1,13 +1,13 @@
 {
-  "name": "week-4-tdd-starter",
+  "name": "week-3-tdd-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/week-4-tdd-starter.js",
+  "main": "dist/week-3-tdd-starter.js",
   "entry": [
     "./src/index.ts"
   ],
   "scripts": {
-    "start": "npm run build && node dist/week-4-tdd-starter.js",
+    "start": "npm run build && node dist/week-3-tdd-starter.js",
     "build": "node scripts/webpack.js",
     "build:prod": "node scripts/webpack.js --prod",
     "build:debug": "node scripts/webpack.js --debug",
