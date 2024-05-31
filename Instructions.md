@@ -1,15 +1,11 @@
 # Week 3 TDD Class Activity: Implementing a basic Calculator
 
-In this activity, you will implement the calculator you designed in previous classes using Test Driven Development.
-This activity is only designed to introduce you to TDD and demonstrate some key ideas behind it; we will cover
-testing in more detail (functional/black-box testing, structural/white-box testing, testing strategies) in
-subsequent lectures.
+In this activity, you will implement the calculator you designed in previous classes using Test Driven Development. This activity is only designed to introduce you to TDD and demonstrate some key ideas behind it; we will cover testing in more detail (functional/black-box testing, structural/white-box testing, testing strategies) in subsequent lectures. Students are expected to work in pairs on this activity. Submission instructions can be found at the bottom of the document.
 
-Students are expected to work in pairs on this activity.
-Submission instructions are at the bottom of the document.
-
-*Note 1*: It takes months of practice to use TDD effectively in real world projects.
-*Note 2*: This activity is just a demonstration of TDD. You actual implementation might contain more complex data structures or patterns like stacks or state machines. The internals of the implementations as well as operators can vary significantly as long as the interface is respected. 
+## Notes:
+1. It takes months of practice to use TDD effectively in real world projects.
+2. This activity is just a demonstration of TDD. You actual implementation might contain more complex data structures or patterns like stacks or state machines. The internals of the implementations as well as operators can vary significantly as long as the interface is respected. 
+3. Use of `eval` and similar dynamic features is not allowed.
 
 ## Key Ideas
 
@@ -601,15 +597,10 @@ And the tests all pass again!!
 Now that we have a basic idea of how TDD works, continue working on developing the calulator.
 - Use TDD to implement basic arithmetic operations with 2 operands, such as `2 + 3 === 5`.
 - Use TDD to support arithmetic operations with more than 1 operator, such as `2 + 3 -1 === 4`.
-- (optional) Use TDD to support operator precedence, such as `2 + 3 * 4 === 14`.
+- Use TDD to support operator precedence, such as `2 + 3 * 4 === 14`.
 
-*Note*: Implementing operator precedence can be tricky. 
-Do not worry if you can't get working in-time for the submission. 
-You can submit basic operations to receive full credit.
-In the coming weeks, we will use design patterns to implement operator precedence for the calculator.
+*Note*: Implementing operator precedence can be tricky. Do not worry if you can't get working in-time for the submission. You can submit basic operations to receive full credit. In the coming weeks, we will use design patterns to implement operator precedence for the calculator.
 
 ## Submission
 
-In the root directory, run the command `npm run zip`. 
-This command will generate a zip file called `submission.zip`.
-Upload the `submission.zip` file to Gradescope and tag your partner on Gradescope on the submission.
+In the root directory, run the command `npm run zip`. This command will generate a zip file called `submission.zip`. Upload the `submission.zip` file to Gradescope and tag your partner on Gradescope on the submission.
