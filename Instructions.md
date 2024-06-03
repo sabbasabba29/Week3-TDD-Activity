@@ -84,22 +84,22 @@ To begin the TDD activity, run `npm install` in the root of the starter code (lo
 Once the installation is complete, run the test commands `npm run test`. You should see the output as below:
 
 ```bash
-> week-4-tdd-starter@1.0.0 test
+> week-3-tdd-starter@1.0.0 test
 > node scripts/jest.js
 
  PASS  src/models/calculator.model.spec.ts
   CalculatorModel
-    √ should contain a CalculatorModel class that implements ICalculatorModel (1 ms)
+    ✓ should contain a CalculatorModel class that implements ICalculatorModel (7 ms)
 
  PASS  src/index.spec.ts
   week4-tdd
     CalculatorModel
-      √ CalculatorModel exists (1 ms)
+      ✓ CalculatorModel exists (7 ms)
 
 Test Suites: 2 passed, 2 total
 Tests:       2 passed, 2 total
 Snapshots:   0 total
-Time:        0.639 s, estimated 1 s
+Time:        1.111 s
 Ran all test suites.
 ```
 
@@ -167,14 +167,18 @@ Now let's run the tests with `npm run test`.
 You should see the below output:
 
 ```bash
-
-> week-4-tdd-starter@1.0.0 test
+> week-3-tdd-starter@1.0.0 test
 > node scripts/jest.js
+
+ PASS  src/index.spec.ts
+  week4-tdd
+    CalculatorModel
+      ✓ CalculatorModel exists (2 ms)
 
  FAIL  src/models/calculator.model.spec.ts
   CalculatorModel
-    √ should contain a CalculatorModel class that implements ICalculatorModel (1 ms)
-    × should have an empty display on init
+    ✓ should contain a CalculatorModel class that implements ICalculatorModel (1 ms)
+    ✕ should have an empty display on init (1 ms)
 
   ● CalculatorModel › should have an empty display on init
 
@@ -189,17 +193,12 @@ You should see the below output:
       25 | }
 
       at CalculatorModel.display (src/models/calculator.model.ts:22:11)
-      at Object.display (src/models/calculator.model.spec.ts:21:45)
-
- PASS  src/index.spec.ts
-  week4-tdd
-    CalculatorModel
-      √ CalculatorModel exists (1 ms)
+      at Object.display (src/models/calculator.model.spec.ts:20:43)
 
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 2 passed, 3 total
 Snapshots:   0 total
-Time:        0.657 s, estimated 1 s
+Time:        0.565 s, estimated 1 s
 Ran all test suites.
 ```
 
@@ -290,14 +289,14 @@ As expected, the test should fail as below:
 
 ```bash
 
-> week-4-tdd-starter@1.0.0 test
+> week-3-tdd-starter@1.0.0 test
 > node scripts/jest.js
 
  FAIL  src/models/calculator.model.spec.ts
   CalculatorModel
-    √ should contain a CalculatorModel class that implements ICalculatorModel (1 ms)
-    √ should have an empty display on init (3 ms)
-    × should display `1` when the `1` key is pressed
+    ✓ should contain a CalculatorModel class that implements ICalculatorModel (2 ms)
+    ✓ should have an empty display on init (1 ms)
+    ✕ should display `1` when the `1` key is pressed (1 ms)
 
   ● CalculatorModel › should display `1` when the `1` key is pressed
 
@@ -312,17 +311,17 @@ As expected, the test should fail as below:
       13 |   public pressOperatorKey(key: OperatorKeys): void {
 
       at CalculatorModel.pressNumericKey (src/models/calculator.model.ts:10:11)
-      at Object.pressNumericKey (src/models/calculator.model.spec.ts:35:16)
+      at Object.pressNumericKey (src/models/calculator.model.spec.ts:33:14)
 
  PASS  src/index.spec.ts
   week4-tdd
     CalculatorModel
-      √ CalculatorModel exists (1 ms)
+      ✓ CalculatorModel exists (1 ms)
 
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 3 passed, 4 total
 Snapshots:   0 total
-Time:        0.637 s, estimated 1 s
+Time:        0.548 s, estimated 1 s
 Ran all test suites.
 ```
 
@@ -362,41 +361,41 @@ This ensures that as we implement more complex ideas or refactor code, the inten
 
 ```bash
 
-> week-4-tdd-starter@1.0.0 test
+> week-3-tdd-starter@1.0.0 test
 > node scripts/jest.js
 
  FAIL  src/models/calculator.model.spec.ts
   CalculatorModel
-    √ should contain a CalculatorModel class that implements ICalculatorModel (1 ms)
-    × should have an empty display on init (2 ms)
-    √ should display `1` when the `1` key is pressed
+    ✓ should contain a CalculatorModel class that implements ICalculatorModel (2 ms)
+    ✕ should have an empty display on init (2 ms)
+    ✓ should display `1` when the `1` key is pressed
 
   ● CalculatorModel › should have an empty display on init
-                                                                                                                                                                                         
+
     expect(received).toEqual(expected) // deep equality
 
     Expected: ""
     Received: "1"
 
-      23 |
-      24 |     // Assert
-    > 25 |     expect(displayValue).toEqual('');
-         |                          ^
-      26 |
-      27 |   });
-      28 |
+      22 |
+      23 |   // Assert
+    > 24 |   expect(displayValue).toEqual('');
+         |                        ^
+      25 |
+      26 | });
+      27 | it('should display `1` when the `1` key is pressed', (): void => {
 
-      at Object.toEqual (src/models/calculator.model.spec.ts:25:26)
+      at Object.toEqual (src/models/calculator.model.spec.ts:24:24)
 
  PASS  src/index.spec.ts
   week4-tdd
     CalculatorModel
-      √ CalculatorModel exists (1 ms)
+      ✓ CalculatorModel exists (2 ms)
 
 Test Suites: 1 failed, 1 passed, 2 total
 Tests:       1 failed, 3 passed, 4 total
 Snapshots:   0 total
-Time:        0.605 s, estimated 1 s
+Time:        0.56 s, estimated 1 s
 Ran all test suites.
 ```
 
@@ -435,24 +434,24 @@ Now, all the tests should pass:
 
 ```bash
 
-> week-4-tdd-starter@1.0.0 test
+> week-3-tdd-starter@1.0.0 test
 > node scripts/jest.js
 
  PASS  src/models/calculator.model.spec.ts
   CalculatorModel
-    √ should contain a CalculatorModel class that implements ICalculatorModel (2 ms)
-    √ should have an empty display on init (1 ms)
-    √ should display `1` when the `1` key is pressed
+    ✓ should contain a CalculatorModel class that implements ICalculatorModel (2 ms)
+    ✓ should have an empty display on init (1 ms)
+    ✓ should display `1` when the `1` key is pressed
 
  PASS  src/index.spec.ts
   week4-tdd
     CalculatorModel
-      √ CalculatorModel exists (1 ms)
+      ✓ CalculatorModel exists (1 ms)
 
 Test Suites: 2 passed, 2 total
 Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        0.667 s, estimated 1 s
+Time:        0.595 s, estimated 1 s
 Ran all test suites.
 ```
 
